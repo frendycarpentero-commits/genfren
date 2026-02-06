@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frendy Carpentero | General Virtual Assistant</title>
+  <meta name="description" content="Frendy Carpentero – General Virtual Assistant providing data entry, calendar management, administrative support, and Amazon VA services." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --primary: #5b7cff;
+      --secondary: #6b7280;
+      --text: #111827;
+      --accent: #e5ebff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--accent), #ffffff);
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 { font-size: 2.5rem; font-weight: 700; }
+    header p { margin-top: 1rem; font-size: 1.05rem; color: var(--secondary); }
+
+    nav {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      animation: slideUp 0.8s ease both;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service {
+      background: #f9fafb;
+      border-radius: 14px;
+      padding: 1.5rem;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    }
+
+    .service h3 { margin-bottom: .5rem; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: .75rem 1.5rem;
+      border-radius: 999px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(91,124,255,0.35);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--secondary);
+    }
+
+    .fade-in { animation: fadeIn 0.8s ease both; }
+    .delay-1 { animation-delay: .2s; }
+    .delay-2 { animation-delay: .4s; }
+    .delay-3 { animation-delay: .6s; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="profile.jpg" alt="Frendy Carpentero - General Virtual Assistant" style="width:140px;height:140px;border-radius:50%;object-fit:cover;box-shadow:0 8px 20px rgba(0,0,0,0.15);margin-bottom:1rem;" />
+  <h1 class="fade-in">Frendy Carpentero</h1>
+  <p class="fade-in delay-1">General Virtual Assistant | Executive Support | Amazon VA</p>
+  <p class="fade-in delay-2" style="max-width:720px;margin:1rem auto 0;color:#4b5563;">
+    Reliable, detail-driven virtual support for business owners and e-commerce teams who need consistency, organization, and clear communication.
+  </p>
+  <nav class="fade-in delay-3">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      I am a detail-oriented General Virtual Assistant dedicated to supporting business owners and e-commerce entrepreneurs with reliable, organized, and efficient virtual support. Although entry-level, I am highly trained, self-motivated, and committed to delivering accurate and consistent results.
+    </p>
+    <p style="margin-top:1rem;">
+      My strengths include data entry, calendar management, administrative support, and product listing for online stores. I take pride in being proactive, dependable, and easy to work with—helping clients stay focused on growth while I manage the details behind the scenes.
+    </p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="card">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="service">
+        <h3>Data Entry</h3>
+        <p>Accurate and organized data input using spreadsheets and online tools.</p>
+      </div>
+      <div class="service">
+        <h3>Email Management</h3>
+        <p>Inbox organization, message filtering, and timely responses.</p>
+      </div>
+      <div class="service">
+        <h3>Calendar Management</h3>
+        <p>Scheduling, appointment tracking, and meeting coordination.</p>
+      </div>
+      <div class="service">
+        <h3>Administrative Support</h3>
+        <p>Day-to-day admin tasks to keep operations smooth and efficient.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="card portfolio">
+    <h2>Portfolio & Work Samples</h2>
+    <p>
+      Below are selected samples showcasing my work in data entry, spreadsheet management, and administrative tasks.
+    </p>
+    <a class="btn" href="https://drive.google.com/drive/folders/1i8udE3MeKzWWaneRxaHxH2UyXkl0hlm7?usp=drive_link" target="_blank">View Portfolio Samples</a>
+  </div>
+</section>
+
+<section id="resume">
+  <div class="card">
+    <h2>Resume / CV</h2>
+    <p>You can download and review my complete resume below.</p>
+    <a class="btn" href="https://drive.google.com/file/d/1K61onPGPULYiwdVVskIdFZSlAc6WL--D/view?usp=drive_link" target="_blank">Download My CV</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <h2>Contact</h2>
+    <p>
+      Interested in working together? I’d love to support your business.
+    </p>
+    <p style="margin-top:1rem;">
+      📧 Email: <strong>your.frendycarpentero@gmail.com</strong>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Frendy Carpentero. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
